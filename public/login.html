@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-xwqOWtWZFQ+ZD/z3+Ut+DvC7DP0LUshKE0lIK7oXE1sB+MDDs3l9a3IwbpRfHKqy1lZj7Zf3ny1w2pN1eAQYOw==" crossorigin="anonymous" />
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .login-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px; /* Aumenté el padding para hacerlo más cuadrado */
+            cursor: pointer;
+            width: 100%; /* Hace que el botón ocupe el ancho completo del contenedor */
+        }
+
+        .register-button {
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px; /* Ajusté el padding para reducir el ancho */
+            border-radius: 5px;
+            display: block;
+            text-align: center; /* Centra el texto dentro del botón */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegación de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ComputerBeef</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.php">
+                        <i class="fas fa-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.php">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signout.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="text-center mt-4">ComputerBeef</h1>
+
+    <div class="d-flex justify-content-center">
+        <div class="login-container">
+            <div class="login-form">
+                <h2 class="text-center">Iniciar Sesión</h2>
+                <form action="login.php" method="post">
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="Email de Usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="text-center mt-3">¿Aún no te has registrado?</h4>
+    <a href="registro.html" class="register-button">Registrarse</a>
+</body>
+
+</html>
