@@ -4,10 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregamos la referencia al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-xwqOWtWZFQ+ZD/z3+Ut+DvC7DP0LUshKE0lIK7oXE1sB+MDDs3l9a3IwbpRfHKqy1lZj7Zf3ny1w2pN1eAQYOw==" crossorigin="anonymous" />
     <title>Sign Out</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #dc3545; /* Color rojo de Bootstrap para botones de peligro */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c82333; /* Cambio de color al pasar el ratón sobre el botón */
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Barra de navegación de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ComputerBeef</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.php">
+                        <i class="fas fa-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.php">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signout.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <h1>Cerrar Sesión</h1>
 
